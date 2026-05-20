@@ -8,7 +8,7 @@ Capture text from anywhere on your screen, translate it instantly, or pin screen
 
 ## OCR Translation
 
-![OCR Demo](t-demo.gif)
+<img src="t-demo.gif" width="300" alt="Translate Demo" />
 
 Select any area on your screen and translate it instantly.
 
@@ -35,7 +35,7 @@ https://github.com/d4n3436/GTranslate
 
 ## Screenshot Pinning
 
-![SP Demo](ss-demo.gif)
+<img src="ss-demo.gif" width="300" alt="ScreenshotPin Demo" />
 
 Take a screenshot and pin it directly onto your desktop.
 
@@ -62,8 +62,6 @@ Ukula started because I got tired of pointing my phone at my monitor while playi
 Waiting for camera OCR, fighting blurry screenshots, retyping things manually...
 
 Eventually it became easier to build a small desktop tool than continue doing that forever 😄
-
-So Ukula was built around one idea:
 
 ---
 
