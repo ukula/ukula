@@ -7,13 +7,6 @@ Fast OCR translation and screenshot pin tool for Windows.
 
 Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.
 
-<table>
-  <tr>
-    <td><img src="pics/ss2.png" width="100%" alt="Translate Engine"/></td>
-    <td><img src="pics/ss3.png" width="100%" alt="Target Language"/></td>
-  </tr>
-</table>
-
 ---
 
 ## OCR Translation
@@ -75,6 +68,13 @@ Waiting for camera OCR, fighting blurry screenshots, retyping things manually...
 
 Eventually it became easier to build a small desktop tool than continue doing that forever 😄
 
+---
+<table>
+  <tr>
+    <td><img src="pics/ss2.png" width="100%" alt="Translate Engine"/></td>
+    <td><img src="pics/ss3.png" width="100%" alt="Target Language"/></td>
+  </tr>
+</table>
 ---
 
 ## Windows SmartScreen Warning
