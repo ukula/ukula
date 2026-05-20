@@ -1,163 +1,87 @@
 # Ukula
 
-Fast OCR translation tool for Windows.
+Fast OCR translation and screenshot pin tool for Windows.
 
-Capture text from anywhere on your screen, translate it instantly, pin screenshots, and keep working without breaking your flow.
-
----
-
-## Features
-
-* OCR screen capture
-* Instant translation
-* DeepL support
-* Google Translate support
-* Azure Translator support
-* Global hotkeys
-* Pinned screenshot windows
-* Always-on-top capture mode
-* Clipboard image support
-* Lightweight desktop app
-* No ads
-* No telemetry
+Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.
 
 ---
 
-## Screenshots
+## OCR Translation
 
-[ Screenshot here ]
-
-[ Pinned screenshot window gif/video here ]
-
-[ OCR workflow gif/video here ]
-
----
-
-## Why Ukula?
-
-Ukula started as a personal tool because most OCR translators felt:
-
-* bloated
-* slow
-* overdesigned
-* cloud-heavy
-* or filled with unnecessary UI
-
-The goal is simple:
-
-```text
-capture → translate → continue working
-```
-
-No account system.
-No subscriptions inside the app.
-No background analytics.
-
-Just a fast desktop utility.
-
----
-
-## Translation Engines
-
-Ukula currently supports:
+Select any area on your screen and translate it instantly.
 
 * DeepL
 * Google Translate
 * Azure Translator
 
-You can use your own API keys.
+Use your own API keys and workflow.
+
+[ OCR gif/video here ]
 
 ---
 
-## Privacy
+## Screenshot Pinning
 
-Ukula does not collect telemetry, analytics, usage tracking, or advertising identifiers.
+Take a screenshot and pin it directly onto your desktop.
 
-OCR and translation requests are only sent to the translation provider you choose.
+Useful for:
 
-Please review the privacy policy for details:
+* references
+* tutorials
+* coding
+* design work
+* comparisons
 
-* Privacy Policy:
-  [Ukula Privacy Policy](https://ukula.github.io/ukulaApp/privacy.html?utm_source=chatgpt.com)
+Pinned screenshots support:
 
-* Terms of Service:
-  [Ukula Terms of Service](https://ukula.github.io/ukulaApp/terms.html?utm_source=chatgpt.com)
+* zoom
+* pan
+* always-on-top windowing
+
+[ Pinned screenshot gif/video here ]
+
+---
+
+## Why This Exists
+
+Ukula started because I got tired of pointing my phone at my monitor while playing games just to translate text.
+
+Waiting for camera OCR, fighting blurry screenshots, retyping things manually...
+
+Eventually it became easier to build a small desktop tool than continue doing that forever 😄
+
+So Ukula was built around one idea:
 
 ---
 
 ## Windows SmartScreen Warning
 
-Because Ukula is currently distributed as an independent Windows desktop application without a commercial code-signing certificate, Windows may display a SmartScreen warning during installation.
+Windows may show a SmartScreen warning when running the installer.
 
-This is common for small indie Windows applications.
+Ukula currently does not use a commercial code-signing certificate because those certificates are honestly pretty expensive for a small utility project like this.
 
-Ukula does not include:
+The app does not include:
 
 * ads
-* bundled software
-* cryptocurrency miners
 * telemetry
+* bundled software
 * background services
-
-If you are unsure, you can always:
-
-* scan the installer with VirusTotal
-* inspect network activity
-* or review the public project information here on GitHub
-
-Code-signing certificates for Windows desktop applications are unfortunately expensive for solo developers, especially for small utility software.
+* crypto mining nonsense
 
 ---
 
-## Installation
+## Privacy / Terms
 
-1. Download the latest installer
-2. Run the installer
-3. If Windows shows a SmartScreen warning:
+* Privacy Policy:
+  [Ukula Privacy Policy](https://ukula.github.io/ukulaApp/privacy.html)
 
-   * click "More info"
-   * then "Run anyway"
-
-After installation, Ukula can run minimized in the system tray.
-
----
-
-## Updates
-
-Ukula periodically checks for new versions.
-
-Updates are delivered through the installer system to keep things simple and stable.
-
----
-
-## Current Status
-
-Ukula is actively evolving.
-
-Some features, UI details, and behaviors may still change between releases while the application matures.
-
-Feedback and bug reports are always appreciated.
-
----
-
-## Support
-
-If something breaks, behaves strangely, or feels annoying to use, feel free to open an issue.
-
-Productivity tools should reduce friction — not create more of it.
-
----
-
-## Planned
-
-- better OCR
-- cleaner update flow
-- fewer annoying bugs
+* Terms of Service:
+  [Ukula Terms of Service](https://ukula.github.io/ukulaApp/terms.html)
 
 ---
 
 ## Notes
 
-This project is maintained by a solo developer.
+Ukula is developed and maintained by a solo developer.
 
-Please expect occasional rough edges while the application grows.
+There may still be rough edges here and there while the app evolves.
