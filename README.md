@@ -1,14 +1,23 @@
+<p align="center">
+  <img src="ss1.png" width="600" alt="Ukula Main" />
+</p>
 # Ukula
 
 Fast OCR translation and screenshot pin tool for Windows.
 
 Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.
 
+<p align="center">
+  <img src="ss2.png" width="40%" alt="Ukula Main" />
+  <img src="ss3.png" width="40%" alt="Ukula Main" />
+</p>
+
 ---
 
 ## OCR Translation
-
-<img src="t-demo.gif" width="600" alt="Translate Demo" />
+<p align="center">
+  <img src="t-demo.gif" width="600" alt="Translate Demo" />
+</p>
 
 Select any area on your screen and translate it instantly.
 
@@ -34,8 +43,9 @@ https://github.com/d4n3436/GTranslate
 ---
 
 ## Screenshot Pinning
-
-<img src="ss-demo.gif" width="600" alt="ScreenshotPin Demo" />
+<p align="center">
+  <img src="ss-demo.gif" width="600" alt="ScreenshotPin Demo" />
+</p>
 
 Take a screenshot and pin it directly onto your desktop.
 
