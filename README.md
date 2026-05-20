@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="pics/ss1.png" width="400" alt="Ukula Main" />
+  <img src="pics/ss1.png" width="380" alt="Ukula Main" />
 </p>
-<h1 align="center"> Ukula</h1>
+<h1 align="center">UKULA</h1>
 
 Fast OCR translation and screenshot pin tool for Windows.
 
@@ -9,12 +9,12 @@ Capture text from anywhere on your screen, translate it instantly, or pin screen
 
 ---
 
-## OCR Translation
+<h2 align="center">OCR Translation</h2>
 <p align="center">
   <img src="pics/t-demo.gif" width="600" alt="Translate Demo" />
 </p>
 
-Select any area on your screen and translate it instantly.
+<p align="center">Select any area on your screen and translate it instantly.</p>
 
 Ukula supports:
 
@@ -37,12 +37,12 @@ https://github.com/d4n3436/GTranslate
 
 ---
 
-## Screenshot Pinning
+<h2 align="center">Screenshot Pinning</h2>
 <p align="center">
   <img src="pics/ss-demo.gif" width="600" alt="ScreenshotPin Demo" />
 </p>
 
-Take a screenshot and pin it directly onto your desktop.
+<p align="center">Take a screenshot and pin it directly onto your desktop.</p>
 
 Useful for:
 
