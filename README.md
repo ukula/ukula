@@ -8,7 +8,7 @@ Capture text from anywhere on your screen, translate it instantly, or pin screen
 
 ## OCR Translation
 
-<img src="t-demo.gif" width="300" alt="Translate Demo" />
+<img src="t-demo.gif" width="600" alt="Translate Demo" />
 
 Select any area on your screen and translate it instantly.
 
@@ -35,7 +35,7 @@ https://github.com/d4n3436/GTranslate
 
 ## Screenshot Pinning
 
-<img src="ss-demo.gif" width="300" alt="ScreenshotPin Demo" />
+<img src="ss-demo.gif" width="600" alt="ScreenshotPin Demo" />
 
 Take a screenshot and pin it directly onto your desktop.
 
