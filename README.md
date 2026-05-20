@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="pics/ss1.png" width="600" alt="Ukula Main" />
+  <img src="pics/ss1.png" width="400" alt="Ukula Main" />
 </p>
-<p align="center">#Ukula</p>
+<p align="center"># Ukula</p>
 
 Fast OCR translation and screenshot pin tool for Windows.
 
