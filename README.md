@@ -91,6 +91,15 @@ The app does not include:
 * Terms of Service:
   [Ukula Terms of Service](https://ukula.github.io/ukulaApp/terms.html)
 
+* Licenses
+
+Ukula is a commercial product. See [LICENSE.txt](LICENSE.txt) for full terms.
+
+* Third-party libraries
+- [GTranslate](https://github.com/d4n3436/GTranslate) — MIT License
+- [H.NotifyIcon.WinUI](https://github.com/HavenDV/H.NotifyIcon) — MIT License  
+- [WinUIEx](https://github.com/dotnet/winui-gallery) — MIT License
+
 ---
 
 ## Notes
