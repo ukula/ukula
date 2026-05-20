@@ -7,10 +7,12 @@ Fast OCR translation and screenshot pin tool for Windows.
 
 Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.
 
-<p align="center">
-  <img src="pics/ss2.png" width="40%" alt="Ukula Main" />
-  <img src="pics/ss3.png" width="40%" alt="Ukula Main" />
-</p>
+<table>
+  <tr>
+    <td><img src="pics/ss2.gif" width="100%" alt="Translate Engine"/></td>
+    <td><img src="pics/ss3.gif" width="100%" alt="Target Language"/></td>
+  </tr>
+</table>
 
 ---
 
