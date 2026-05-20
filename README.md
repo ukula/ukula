@@ -148,15 +148,11 @@ Productivity tools should reduce friction — not create more of it.
 
 ---
 
-## Roadmap Ideas
+## Planned
 
-* Better OCR accuracy
-* Faster screenshot workflow
-* Improved update system
-* Optional offline OCR
-* Better multi-monitor support
-* Custom translation pipelines
-* Better language auto-detection
+- better OCR
+- cleaner update flow
+- fewer annoying bugs
 
 ---
 
