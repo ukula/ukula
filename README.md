@@ -66,7 +66,7 @@ Ukula started because I got tired of pointing my phone at my monitor while playi
 
 Waiting for camera OCR, fighting blurry screenshots, retyping things manually...
 
-Eventually it became easier to build a small desktop tool than continue doing that forever 😄
+Eventually it became easier to build a small desktop tool than continue doing that forever.
 
 ---
 <table>
