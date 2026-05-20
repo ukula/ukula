@@ -9,8 +9,8 @@ Capture text from anywhere on your screen, translate it instantly, or pin screen
 
 <table>
   <tr>
-    <td><img src="pics/ss2.gif" width="100%" alt="Translate Engine"/></td>
-    <td><img src="pics/ss3.gif" width="100%" alt="Target Language"/></td>
+    <td><img src="pics/ss2.png" width="100%" alt="Translate Engine"/></td>
+    <td><img src="pics/ss3.png" width="100%" alt="Target Language"/></td>
   </tr>
 </table>
 
