@@ -8,19 +8,34 @@ Capture text from anywhere on your screen, translate it instantly, or pin screen
 
 ## OCR Translation
 
+[ OCR gif/video here ]
+
 Select any area on your screen and translate it instantly.
 
+Ukula supports:
+
 * DeepL
-* Google Translate
+* Google Cloud Translate
 * Azure Translator
+* Google (Free) unofficial API (GTranslate)
 
-Use your own API keys and workflow.
+⚠️ THESE SERVICES REQUIRE YOUR OWN API KEYS.
+You can use whichever provider fits your workflow and pricing preference.
 
-[ OCR gif/video here ]
+"Google (Free) option uses an unofficial API. 
+It may occasionally be rate-limited or unavailable. 
+For stable usage, enter your own API key via Google Cloud, DeepL, or Azure."
+
+GTranslate
+Copyright (c) 2021 d4n3436
+License: MIT License
+https://github.com/d4n3436/GTranslate
 
 ---
 
 ## Screenshot Pinning
+
+[ Pinned screenshot gif/video here ]
 
 Take a screenshot and pin it directly onto your desktop.
 
@@ -37,8 +52,6 @@ Pinned screenshots support:
 * zoom
 * pan
 * always-on-top windowing
-
-[ Pinned screenshot gif/video here ]
 
 ---
 
