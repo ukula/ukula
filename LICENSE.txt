@@ -1,0 +1,63 @@
+UKULA - END USER LICENSE AGREEMENT (EULA)
+Copyright © 2026 Kursat. All rights reserved.
+
+TERMS OF USE
+
+This software ("Ukula") is provided as a commercial product. By downloading, installing, or using this software, you agree to the following terms:
+
+1. GRANT OF LICENSE
+   You are granted a non-exclusive, non-transferable, personal license to install and use this software on your own devices. You may not sell, sublicense, rent, lease, or distribute this software to third parties.
+
+2. RESTRICTIONS
+   You may not:
+   - Reverse engineer, decompile, or disassemble the software
+   - Remove or modify any copyright notices
+   - Use the software for illegal purposes
+   - Redistribute or resell the software
+
+3. INTELLECTUAL PROPERTY
+   All rights, title, and interest in the software remain with the original author. This license does not grant you any rights to patents, copyrights, trade secrets, or trademarks.
+
+4. DISCLAIMER OF WARRANTIES
+   This software is provided "as is" without warranty of any kind. The author makes no guarantees regarding uptime, accuracy of translations, or compatibility with third-party services.
+
+5. LIMITATION OF LIABILITY
+   In no event shall the author be liable for any indirect, incidental, or consequential damages arising from the use of this software.
+
+6. THIRD-PARTY SERVICES
+   This software may use third-party translation services (Google Translate, DeepL, Microsoft Azure). Use of these services is subject to their respective terms of service. The author is not affiliated with these services.
+
+7. TERMINATION
+   This license is effective until terminated. Your rights terminate automatically if you violate any term of this agreement.
+
+---
+
+THIRD-PARTY LICENSES
+
+The following open-source libraries are used in this software:
+
+GTranslate
+Copyright (c) 2021 d4n3436
+License: MIT License
+https://github.com/d4n3436/GTranslate
+
+H.NotifyIcon.WinUI  
+Copyright (c) 2021 HavenDV
+License: MIT License
+https://github.com/HavenDV/H.NotifyIcon
+
+WinUIEx
+Copyright (c) Microsoft Corporation
+License: MIT License
+https://github.com/dotnet/winui-gallery
+
+GTranslate library uses translation APIs in an unofficial capacity.
+Translation availability and accuracy are not guaranteed.
+
+---
+
+NOTICE
+
+Ukula is an independent software product and is not affiliated with, endorsed by, or sponsored by Google, Microsoft, DeepL, or any other company whose services may be used through this application.
+
+"Smart enough to read the room, fast enough to translate it."
