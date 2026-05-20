@@ -89,9 +89,9 @@ The app does not include:
 * Terms of Service:
   [Ukula Terms of Service](https://ukula.github.io/ukulaApp/terms.html)
 
-* Licenses
+## Licenses
 
-Ukula is a commercial product. See [LICENSE.txt](LICENSE.txt) for full terms.
+* Ukula is a commercial product. See [LICENSE.txt](LICENSE.txt) for full terms.
 
 * Third-party libraries
 - [GTranslate](https://github.com/d4n3436/GTranslate) — MIT License
