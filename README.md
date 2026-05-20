@@ -3,9 +3,9 @@
 </p>
 <h1 align="center">UKULA</h1>
 
-Fast OCR translation and screenshot pin tool for Windows.
+<p align="center">Fast OCR translation and screenshot pin tool for Windows.</p>
 
-Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.
+<p align="center">Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.</p>
 
 ---
 
@@ -77,7 +77,7 @@ Eventually it became easier to build a small desktop tool than continue doing th
 </table>
 ---
 
-## Windows SmartScreen Warning
+## ⚠️Windows SmartScreen Warning⚠️
 
 Windows may show a SmartScreen warning when running the installer.
 
