@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="pics/ss1.png" width="380" alt="Ukula Main" />
+  <img src="assets/ss1.png" width="380" alt="Ukula Main" />
 </p>
 <h1 align="center">UKULA</h1>
 
@@ -8,7 +8,7 @@
 <p align="center">Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.</p>
 
 <p align="center">
-  <a href="https://ukula.gumroad.com/l/ukula">
+  <a href="https://kursatkd.gumroad.com/l/ukula">
     <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
   </a>
 </p>
@@ -17,7 +17,7 @@
 
 <h2 align="center">OCR Translation</h2>
 <p align="center">
-  <img src="pics/t-demo.gif" width="600" alt="Translate Demo" />
+  <img src="assets/translate-demo.webm" width="600" alt="Translate Demo" />
 </p>
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
@@ -46,7 +46,7 @@ https://github.com/d4n3436/GTranslate
 
 <h2 align="center">Screenshot Pinning</h2>
 <p align="center">
-  <img src="pics/ss-demo.gif" width="600" alt="ScreenshotPin Demo" />
+  <img src="assets/screenshot-demo.webm" width="600" alt="Pin Demo" />
 </p>
 
 <p align="center">Take a screenshot and pin it directly onto your desktop.</p>
@@ -78,8 +78,8 @@ Eventually it became easier to build a small desktop tool than continue doing th
 ---
 <table>
   <tr>
-    <td><img src="pics/ss2.png" width="100%" alt="Translate Engine"/></td>
-    <td><img src="pics/ss3.png" width="100%" alt="Target Language"/></td>
+    <td><img src="assets/ss2.png" width="100%" alt="Translate Engine"/></td>
+    <td><img src="assets/ss3.png" width="100%" alt="Target Language"/></td>
   </tr>
 </table>
 ---
@@ -103,14 +103,11 @@ The app does not include:
 ## Privacy / Terms
 
 * Privacy Policy:
-  [Ukula Privacy Policy](https://ukula.github.io/ukulaApp/privacy.html)
+  [Ukula Privacy Policy](https://kursatkd.github.io/ukulaSite/privacy.html)
 
 * Terms of Service:
-  [Ukula Terms of Service](https://ukula.github.io/ukulaApp/terms.html)
+  [Ukula Terms of Service](https://kursatkd.github.io/ukulaSite/terms.html)
 
-## Licenses
-
-* Ukula is a commercial product. See [LICENSE](LICENSE.txt) for full terms.
 
 * Third-party libraries
 - [GTranslate](https://github.com/d4n3436/GTranslate) — MIT License
