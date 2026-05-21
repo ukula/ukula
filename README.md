@@ -126,6 +126,7 @@ The app does not include:
 - [H.NotifyIcon.WinUI](https://github.com/HavenDV/H.NotifyIcon) — MIT License  
 - [WinUIEx](https://github.com/dotnet/winui-gallery) — MIT License
 - [ZXing.Net](https://github.com/micjahn/ZXing.Net) — Apache 2.0
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) — Apache 2.0
 
 ---
 
