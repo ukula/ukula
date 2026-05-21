@@ -103,12 +103,13 @@ The app does not include:
 
 ## Licenses
 
-* Ukula is a commercial product. See [LICENSE.txt](LICENSE.txt) for full terms.
+* Ukula is a commercial product. See [LICENSE](LICENSE.txt) for full terms.
 
 * Third-party libraries
 - [GTranslate](https://github.com/d4n3436/GTranslate) — MIT License
 - [H.NotifyIcon.WinUI](https://github.com/HavenDV/H.NotifyIcon) — MIT License  
 - [WinUIEx](https://github.com/dotnet/winui-gallery) — MIT License
+- [ZXing.Net](https://github.com/micjahn/ZXing.Net) — Apache 2.0
 
 ---
 
