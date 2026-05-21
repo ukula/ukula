@@ -7,6 +7,12 @@
 
 <p align="center">Capture text from anywhere on your screen, translate it instantly, or pin screenshots directly on your desktop while working.</p>
 
+<p align="center">
+  <a href="https://ukula.gumroad.com/l/ukula">
+    <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
+  </a>
+</p>
+
 ---
 
 <h2 align="center">OCR Translation</h2>
@@ -16,11 +22,6 @@
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
 
-<p align="center">
-  <a href="https://ukula.gumroad.com/l/ukula">
-    <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
-  </a>
-</p>
 
 Ukula supports:
 
