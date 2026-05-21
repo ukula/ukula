@@ -16,6 +16,9 @@
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://ukula.gumroad.com/l/ukula">Buy on</a>
+
 Ukula supports:
 
 * DeepL
