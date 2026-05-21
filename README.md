@@ -64,10 +64,6 @@ https://github.com/d4n3436/GTranslate
 
 <p align="center">Take a screenshot and pin it directly onto your desktop.</p>
 
-<p align="center">
-  <img src="Assets/ss5.png" width="380" alt="Pin" />
-</p>
-
 ---
 
 Useful for:
