@@ -83,6 +83,7 @@ Eventually it became easier to build a small desktop tool than continue doing th
 <table>
   <tr>
     <td><img src="Assets/ss2.png" width="100%" alt="Translate Engine"/></td>
+    <td><img src="Assets/ss4.png" width="100%" alt="Translate Results"/></td>
     <td><img src="Assets/ss3.png" width="100%" alt="Target Language"/></td>
   </tr>
 </table>
