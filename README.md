@@ -17,9 +17,7 @@
 
 <h2 align="center">OCR Translation</h2>
 <p align="center">
-  <video width="100%" controls>
-    <source src="translate-demo.webm" type="video/webm">
-  </video>
+  <img src="Assets/translate-demo.gif" alt="Translate Demo" width="600">
 </p>
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
@@ -55,9 +53,7 @@ https://github.com/d4n3436/GTranslate
 
 <h2 align="center">Screenshot Pinning</h2>
 <p align="center">
-  <video width="100%" controls>
-    <source src="pin-demo.webm" type="video/webm">
-  </video>
+  <img src="Assets/pin-demo.gif" alt="Pin Demo" width="600">
 </p>
 
 <p align="center">Take a screenshot and pin it directly onto your desktop.</p>
