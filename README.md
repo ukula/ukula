@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ss1.png" width="380" alt="Ukula Main" />
+  <img src="Assets/ss1.png" width="380" alt="Ukula Main" />
 </p>
 <h1 align="center">UKULA</h1>
 
@@ -17,7 +17,7 @@
 
 <h2 align="center">OCR Translation</h2>
 <p align="center">
-  <img src="assets/translate-demo.webm" width="600" alt="Translate Demo" />
+  <img src="Assets/translate-demo.webm" width="600" alt="Translate Demo" />
 </p>
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
@@ -46,7 +46,7 @@ https://github.com/d4n3436/GTranslate
 
 <h2 align="center">Screenshot Pinning</h2>
 <p align="center">
-  <img src="assets/screenshot-demo.webm" width="600" alt="Pin Demo" />
+  <img src="Assets/screenshot-demo.webm" width="600" alt="Pin Demo" />
 </p>
 
 <p align="center">Take a screenshot and pin it directly onto your desktop.</p>
@@ -78,8 +78,8 @@ Eventually it became easier to build a small desktop tool than continue doing th
 ---
 <table>
   <tr>
-    <td><img src="assets/ss2.png" width="100%" alt="Translate Engine"/></td>
-    <td><img src="assets/ss3.png" width="100%" alt="Target Language"/></td>
+    <td><img src="Assets/ss2.png" width="100%" alt="Translate Engine"/></td>
+    <td><img src="Assets/ss3.png" width="100%" alt="Target Language"/></td>
   </tr>
 </table>
 ---
