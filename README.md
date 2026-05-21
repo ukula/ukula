@@ -38,7 +38,9 @@ Ukula supports:
 * Google (Free) unofficial API (GTranslate)
 
 ⚠️ THESE SERVICES REQUIRE YOUR OWN API KEYS.
-You can use whichever provider fits your workflow and pricing preference.
+
+Your API key is encrypted and stored locally on this device via Windows Credential Manager; 
+it is never sent to external servers, nor is it saved in any file or folder on your computer.
 
 "Google (Free) option uses an unofficial API. 
 It may occasionally be rate-limited or unavailable. 
@@ -92,15 +94,14 @@ Eventually it became easier to build a small desktop tool than continue doing th
 
 Windows may show a SmartScreen warning when running the installer.
 
-Ukula currently does not use a commercial code-signing certificate because those certificates are honestly pretty expensive for a small utility project like this.
+Ukula currently does not use a commercial code-signing certificate because those 
+certificates are honestly pretty expensive for a small utility project like this.
 
 The app does not include:
 
 * ads
 * telemetry
-* bundled software
-* background services
-* crypto mining nonsense
+* or anything like that
 
 ---
 
