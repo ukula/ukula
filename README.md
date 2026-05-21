@@ -16,13 +16,9 @@
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
 
-<a href="https://ukula.gumroad.com/l/ukula">
-    <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
-</a>
+<p align="center">[![Buy on Gumroad](https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad)](https://ukula.gumroad.com/l/ukula)</p>
 
-[![Buy on Gumroad](https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad)](https://ukula.gumroad.com/l/ukula)
 
-[![Gumroad](https://img.shields.io/badge/Gumroad-Ukula-red?style=flat-square)](https://ukula.gumroad.com/l/ukula)
 
 Ukula supports:
 
