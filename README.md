@@ -20,6 +20,10 @@
     <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
 </a>
 
+[![Buy on Gumroad](https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad)](https://ukula.gumroad.com/l/ukula)
+
+[![Gumroad](https://img.shields.io/badge/Gumroad-Ukula-red?style=flat-square)](https://ukula.gumroad.com/l/ukula)
+
 Ukula supports:
 
 * DeepL
