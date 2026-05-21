@@ -121,7 +121,7 @@ The app does not include:
 
 ---
 
-Third-party libraries
+## Third-party libraries
 - [GTranslate](https://github.com/d4n3436/GTranslate) — MIT License
 - [H.NotifyIcon.WinUI](https://github.com/HavenDV/H.NotifyIcon) — MIT License  
 - [WinUIEx](https://github.com/dotnet/winui-gallery) — MIT License
