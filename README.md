@@ -16,8 +16,9 @@
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
 
-<script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://ukula.gumroad.com/l/ukula">Buy on</a>
+<a href="https://ukula.gumroad.com/l/ukula">
+    <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
+</a>
 
 Ukula supports:
 
