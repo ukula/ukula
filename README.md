@@ -16,15 +16,9 @@
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
 
-[![Buy on Gumroad](https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad)](https://ukula.gumroad.com/l/ukula)
-
 <p align="center">
   <a href="https://ukula.gumroad.com/l/ukula">
     <img src="https://img.shields.io/badge/Buy%20on-Gumroad-orange?style=for-the-badge&logo=gumroad">
-  </a>
-
-  <a href="https://github.com/akula/ukula">
-    <img src="https://img.shields.io/github/stars/akula/ukula?style=for-the-badge">
   </a>
 </p>
 
