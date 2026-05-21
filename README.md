@@ -21,7 +21,9 @@
 </p>
 
 <p align="center">Select any area on your screen and translate it instantly.</p>
+
 ---
+
 <table>
   <tr>
     <td><img src="Assets/ss2.png" width="100%" alt="Translate Engine"/></td>
@@ -29,7 +31,9 @@
     <td><img src="Assets/ss3.png" width="100%" alt="Target Language"/></td>
   </tr>
 </table>
+
 ---
+
 Ukula supports:
 
 * DeepL
@@ -60,6 +64,12 @@ https://github.com/d4n3436/GTranslate
 
 <p align="center">Take a screenshot and pin it directly onto your desktop.</p>
 
+<p align="center">
+  <img src="Assets/ss5.png" width="380" alt="Pin" />
+</p>
+
+---
+
 Useful for:
 
 * references
@@ -85,10 +95,6 @@ Waiting for camera OCR, fighting blurry screenshots, retyping things manually...
 Eventually it became easier to build a small desktop tool than continue doing that forever.
 
 ---
-<p align="center">
-  <img src="Assets/ss5.png" width="380" alt="Pin" />
-</p>
----
 
 ## ⚠️Windows SmartScreen Warning⚠️
 
@@ -113,6 +119,7 @@ The app does not include:
 * Terms of Service:
   [Ukula Terms of Service](https://kursatkd.github.io/ukulaSite/terms.html)
 
+---
 
 * Third-party libraries
 - [GTranslate](https://github.com/d4n3436/GTranslate) — MIT License
