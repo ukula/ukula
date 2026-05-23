@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ukulaApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ukulaApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

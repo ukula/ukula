@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="UkulaApp.SelectionWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="SelectionGrid">
+        <Image x:Name="BackgroundImage" Stretch="UniformToFill"/>
+
+        <Canvas x:Name="SelectionCanvas" Background="Black" Opacity="1">
+            <Rectangle x:Name="SelectionRect" 
+                       Stroke="White" 
+                       StrokeThickness="4" 
+                       RadiusX="10" 
+                       RadiusY="10"
+                       Fill="#9987CEEB" 
+                       Visibility="Collapsed"/>
+        </Canvas>
+    </Grid>
+</Window>

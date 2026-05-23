@@ -1,0 +1,12 @@
+Tesseract OCR — Apache License 2.0
+https://github.com/tesseract-ocr/tesseract/blob/main/LICENSE
+
+Tesseract tessdata — Apache License 2.0
+https://github.com/tesseract-ocr/tessdata/blob/main/LICENSE
+
+Tesseract .NET wrapper — Apache License 2.0
+https://github.com/charlesw/tesseract/blob/master/LICENSE.txt
+
+ZXing.Net — Apache License 2.0
+https://github.com/micjahn/ZXing.Net/blob/master/LICENSE
+https://github.com/micjahn/ZXing.Net?tab=Apache-2.0-1-ov-file

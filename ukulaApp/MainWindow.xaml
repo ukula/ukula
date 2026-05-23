@@ -1,0 +1,703 @@
+<Window
+        x:Class="UkulaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+        xmlns:media="using:Microsoft.UI.Xaml.Media"
+        mc:Ignorable="d">
+    <Grid
+            x:Name="RootGrid"
+            Background="Transparent">
+        <SplitView
+                x:Name="RootSplitView"
+                PaneBackground="Transparent"
+                DisplayMode="Overlay"
+                IsPaneOpen="False"
+                CompactPaneLength="0"
+                OpenPaneLength="250"
+                PanePlacement="Left">
+
+
+            <!--AYARLAR PANELİ-->
+            <SplitView.Pane>
+                <Grid x:Name="SettingsPane">
+                    <Border
+                            x:Name="SettingsBorder"
+                            Background="{ThemeResource SystemAccentColorDark3}"
+                            CornerRadius="0,16,16,0" />
+                    <ScrollViewer
+                            VerticalScrollBarVisibility="Auto"
+                            HorizontalScrollBarVisibility="Disabled">
+                        <Grid Padding="15">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <!--ÇEVİRİ MOTORU-->
+                            <StackPanel Grid.Row="0" Spacing="10">
+
+                                <TextBlock
+                                        x:Name="EngineHeader"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        HorizontalAlignment="Left"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        CharacterSpacing="150"/>
+
+                                <ComboBox
+                                        x:Name="EngineCombo"
+                                        HorizontalAlignment="Left"
+                                        Width="130"
+                                        CornerRadius="12"
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        BorderThickness="1"
+                                        Foreground="#BAFFFFFF"
+                                        FontFamily="{StaticResource GoogleSansRegular}"
+                                        FontSize="13"
+                                        SelectionChanged="ProviderChanged"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight2}">
+
+                                    <ComboBoxItem x:Name="GoogleFreeItem" />
+
+                                    <ComboBoxItem
+                                            x:Name="GoogleCloudItem" 
+                                            Foreground="#BAFFFFFF"
+                                            Content="Google Cloud" />
+
+                                    <ComboBoxItem
+                                            x:Name="DeepLItem" 
+                                            Foreground="#BAFFFFFF"
+                                            Content="DeepL" />
+
+                                    <ComboBoxItem
+                                            x:Name="AzureItem"  
+                                            Foreground="#BAFFFFFF"
+                                            Content="Microsoft Azure" />
+                                </ComboBox>
+
+                                <StackPanel
+                                        x:Name="DeepLKeyArea"
+                                        Visibility="Collapsed"
+                                        Spacing="12">
+
+                                    <TextBlock 
+                                            x:Name="DeepLKeyHeader" 
+                                            FontSize="12"
+                                            Opacity="0.4"
+                                            FontFamily="{StaticResource GoogleSansBold}" />
+
+                                    <PasswordBox 
+                                            x:Name="ApiKeyBox"
+                                            Background="{ThemeResource SystemAccentColorDark1}"
+                                            PasswordRevealMode="Peek"
+                                            Opacity="0.6"
+                                            BorderBrush="{ThemeResource SystemAccentColorLight1}"
+                                            FontFamily="{StaticResource GoogleSansRegular}"
+                                            PasswordChanged="ApiKeyChanged"
+                                            CornerRadius="12"
+                                            HorizontalAlignment="Left"
+                                            Width="130" />
+                                </StackPanel>
+
+                                <StackPanel
+                                        x:Name="GoogleCloudKeyArea"
+                                        Visibility="Collapsed"
+                                        Spacing="12">
+
+                                    <TextBlock 
+                                            x:Name="GoogleCloudKeyHeader"
+                                            FontSize="12"
+                                            Opacity="0.4"
+                                            FontFamily="{StaticResource GoogleSansBold}" />
+
+                                    <PasswordBox 
+                                        x:Name="GoogleCloudKeyBox"    
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        Opacity="0.6"
+                                        PasswordRevealMode="Peek"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight1}"
+                                        FontFamily="{StaticResource GoogleSansRegular}"
+                                        PasswordChanged="GoogleCloudKeyChanged"
+                                        CornerRadius="12"
+                                        HorizontalAlignment="Left"
+                                        Width="130"/>
+
+                                </StackPanel>
+
+                                <StackPanel
+                                        x:Name="AzureKeyArea"
+                                        Visibility="Collapsed"
+                                        Spacing="12">
+
+                                    <TextBlock 
+                                            x:Name="AzureKeyHeader"
+                                            FontSize="12"
+                                            CharacterSpacing="150"
+                                            Opacity="0.4"
+                                            FontFamily="{StaticResource GoogleSansBold}" />
+
+                                    <PasswordBox 
+                                            Background="{ThemeResource SystemAccentColorDark1}"
+                                            Opacity="0.6"
+                                            x:Name="AzureKeyBox"
+                                            PasswordRevealMode="Peek"
+                                            FontFamily="{StaticResource GoogleSansRegular}"
+                                            PasswordChanged="AzureKeyChanged"
+                                            CornerRadius="12"
+                                            HorizontalAlignment="Left"
+                                            Width="130"
+                                            BorderBrush="{ThemeResource SystemAccentColorLight1}" />
+
+                                    <TextBlock 
+                                            x:Name="AzureRegionHeader"
+                                            FontSize="12"
+                                            CharacterSpacing="150"
+                                            Opacity="0.4"
+                                            FontFamily="{StaticResource GoogleSansBold}" />
+
+                                    <TextBox
+                                            x:Name="AzureRegionBox"
+                                            HorizontalAlignment="Left"
+                                            Width="130"
+                                            Opacity="0.6"
+                                            Background="{ThemeResource SystemAccentColorDark1}"
+                                            CornerRadius="12"
+                                            PlaceholderText="eastus, westeurope..."
+                                            FontFamily="{StaticResource GoogleSansRegular}"
+                                            TextChanged="AzureRegionChanged"
+                                            BorderBrush="{ThemeResource SystemAccentColorLight1}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Spacing="6" Margin="0,2,0,0">
+
+                                    <FontIcon Glyph="&#xE946;" FontSize="12" Foreground="Gray" />
+
+                                    <TextBlock x:Name="APIKeyNotice"
+                                               FontFamily="{StaticResource GoogleSansBold}"
+                                               Foreground="Gray" 
+                                               FontSize="10" 
+                                               FontStyle="Italic">
+                                        <ToolTipService.ToolTip>
+                                            <ToolTip x:Name="APIKeyNoticeLong"
+                                                     FontFamily="{StaticResource GoogleSansRegular}"/>
+                                        </ToolTipService.ToolTip>
+                                    </TextBlock>
+                                </StackPanel>
+                                <Button
+                                    x:Name="ClearKeys"
+                                    FontFamily="{StaticResource GoogleSansRegular}"
+                                    FontSize="10" 
+                                    BorderThickness="1"
+                                    CornerRadius="10"
+                                    Foreground="#BAFFFFFF"
+                                    Background="{ThemeResource SystemAccentColorDark1}"
+                                    BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                    Click="OnClearApiKeysClick"/>
+                            </StackPanel>
+                            
+                            <StackPanel Grid.Row="1">
+                                <TextBlock Padding="0,10,0,5"
+                                        x:Name="OcrEngineHeader"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        HorizontalAlignment="Left"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        CharacterSpacing="150"/>
+
+                                <ComboBox
+                                        x:Name="OcrEngineCombo"
+                                        HorizontalAlignment="Left"
+                                        Width="130"
+                                        CornerRadius="12"
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        BorderThickness="1"
+                                        Foreground="#BAFFFFFF"
+                                        FontFamily="{StaticResource GoogleSansRegular}"
+                                        FontSize="12"
+                                        SelectionChanged="OcrEngineCombo_SelectionChanged"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight2}">
+
+                                    <ComboBoxItem Content="Windows OCR" Tag="Windows" />
+                                    <ComboBoxItem Content="Tesseract OCR" Tag="Tesseract" />
+                                </ComboBox>
+                            </StackPanel>
+
+                            <Rectangle Grid.Row="2" Height="1" Fill="{ThemeResource SystemAccentColorLight2}" Opacity="0.5" Margin="20,20,20,10" HorizontalAlignment="Stretch"/>
+                            
+                            <!--UYGULAMA DİLİ-->
+                            <StackPanel Grid.Row="3">
+                                <TextBlock
+                                        x:Name="LanguageHeader" Padding="0,10,0,5"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        CharacterSpacing="100"
+                                        HorizontalAlignment="Left"/>
+                                <ComboBox
+                                        x:Name="AppLangCombo"
+                                        Width="100"
+                                        CornerRadius="12"
+                                        Foreground="#BAFFFFFF"
+                                        SelectionChanged="OnAppLangChanged"
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        BorderThickness="0.5"
+                                        FontFamily="{StaticResource GoogleSansRegular}"
+                                        FontSize="13"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight2}">
+                                    <ComboBoxItem
+                                            x:Name="LangTr"
+                                            Content="Türkçe"
+                                            Tag="tr-TR" />
+                                    <ComboBoxItem
+                                            x:Name="LangEn"
+                                            Content="English"
+                                            Tag="en-US" />
+                                </ComboBox>
+                            </StackPanel>
+
+                            <!--HEDEF DİL-->
+                            <StackPanel Grid.Row="4">
+                                <TextBlock
+                                        x:Name="TargetLangHeader" Padding="0,10,0,5"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        CharacterSpacing="100"
+                                        HorizontalAlignment="Left"/>
+                                <ComboBox
+                                        x:Name="TargetLangCombo"
+                                        HorizontalAlignment="Left"
+                                        Width="100"
+                                        Foreground="#BAFFFFFF"
+                                        CornerRadius="12"
+                                        SelectionChanged="OnTargetLangChanged"
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        BorderThickness="1"
+                                        FontFamily="{StaticResource GoogleSansRegular}"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                        FontSize="13" />
+                            </StackPanel>
+
+                            <Rectangle Grid.Row="5" Height="1" Fill="{ThemeResource SystemAccentColorLight2}" Opacity="0.5" Margin="20,20,20,10" HorizontalAlignment="Stretch"/>
+
+                            <!--ÇEVİRİ KISAYOLU-->
+                            <StackPanel Grid.Row="6">
+                                <TextBlock
+                                        x:Name="TranslateHotkeyHeader" Padding="0,10,0,5"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        CharacterSpacing="100"
+                                        HorizontalAlignment="Center" />
+                                <Button
+                                        x:Name="TranslateHotkeyBox"
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                        BorderThickness="1"
+                                        Opacity="0.9"
+                                        CornerRadius="12"
+                                        Height="32"
+                                        RightTapped="OnHotkeyBoxRightTapped"
+                                        HorizontalAlignment="Stretch"
+                                        GotFocus="OnHotkeyBoxGotFocus"
+                                        LostFocus="OnHotkeyBoxLostFocus"
+                                        KeyDown="OnHotkeyBoxKeyDown"
+                                        KeyUp="OnHotkeyBoxKeyUp">
+                                    <StackPanel
+                                            Orientation="Horizontal"
+                                            Spacing="8">
+                                        <FontIcon
+                                                Glyph="&#xE92E;"
+                                                FontSize="12"
+                                                Foreground="#BAFFFFFF"
+                                                Opacity="0.5" />
+                                        <TextBlock
+                                                x:Name="TranslateHotkeyLabel"
+                                                FontSize="14"
+                                                Foreground="#BAFFFFFF"
+                                                Opacity="0.8"
+                                                VerticalAlignment="Center" />
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <!--EKRAN GÖRÜNTÜSÜ KISAYOLU-->
+                            <StackPanel Grid.Row="7">
+                                <TextBlock
+                                        x:Name="ScreenshotHotkeyHeader" Padding="0,10,0,5"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        CharacterSpacing="100"
+                                        HorizontalAlignment="Center"/>
+                                <Button
+                                        x:Name="ScreenshotHotkeyBox"
+                                        Background="{ThemeResource SystemAccentColorDark1}"
+                                        BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                        BorderThickness="1"
+                                        Opacity="0.9"
+                                        CornerRadius="12"
+                                        Height="32"
+                                        RightTapped="OnHotkeyBoxRightTapped"
+                                        HorizontalAlignment="Stretch"
+                                        GotFocus="OnHotkeyBoxGotFocus"
+                                        LostFocus="OnHotkeyBoxLostFocus"
+                                        KeyDown="OnHotkeyBoxKeyDown"
+                                        KeyUp="OnHotkeyBoxKeyUp">
+                                    <StackPanel
+                                            Orientation="Horizontal"
+                                            Spacing="8">
+                                        <FontIcon
+                                                Glyph="&#xE722;"
+                                                FontSize="12"
+                                                Foreground="#BAFFFFFF"
+                                                Opacity="0.5" />
+                                        <TextBlock
+                                                x:Name="ScreenshotHotkeyLabel"
+                                                FontSize="14"
+                                                Foreground="#BAFFFFFF"
+                                                Opacity="0.8"
+                                                HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel Grid.Row="8">
+                                <TextBlock
+                                    x:Name="ToggleWindowHotkeyHeader" Padding="0,10,0,5"
+                                    FontSize="12"
+                                    Opacity="0.6"
+                                    FontFamily="{StaticResource GoogleSansBold}"
+                                    CharacterSpacing="100"
+                                    HorizontalAlignment="Center"/>
+                                <Button
+                                    x:Name="ToggleWindowHotkeyBox"
+                                    Background="{ThemeResource SystemAccentColorDark1}"
+                                    BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                    BorderThickness="1"
+                                    Opacity="0.9"
+                                    CornerRadius="12"
+                                    Height="32"
+                                    HorizontalAlignment="Stretch"
+                                    RightTapped="OnHotkeyBoxRightTapped"
+                                    GotFocus="OnHotkeyBoxGotFocus"
+                                    LostFocus="OnHotkeyBoxLostFocus"
+                                    KeyDown="OnHotkeyBoxKeyDown"
+                                    KeyUp="OnHotkeyBoxKeyUp">
+                                    <StackPanel
+                                        Orientation="Horizontal"
+                                        Spacing="7">
+
+                                        <FontIcon
+                                            Glyph="&#xE722;"
+                                            FontSize="12"
+                                            Foreground="#BAFFFFFF"
+                                            Opacity="0.5" />
+
+                                        <TextBlock
+                                            x:Name="ToggleWindowHotkeyLabel"
+                                            FontSize="14"
+                                            Foreground="#BAFFFFFF"
+                                            Opacity="0.8"
+                                            VerticalAlignment="Center" />
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+
+                            <Rectangle Grid.Row="9" Height="1" Fill="{ThemeResource SystemAccentColorLight2}" Opacity="0.5" Margin="20,20,20,10" HorizontalAlignment="Stretch"/>
+                            
+                            <!--HER ZAMAN ÜSTTE-->
+                            <StackPanel Grid.Row="10">
+                                <TextBlock
+                                        x:Name="AlwaysOnTopHeader" Padding="0,10,0,0"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        CharacterSpacing="100"
+                                        HorizontalAlignment="Left" />
+
+                                <ToggleSwitch
+                                        x:Name="AlwaysOnTopToggle"
+                                        OnContent="Açık"
+                                        OffContent="Kapalı"
+                                        Toggled="AlwaysOnTopToggled"
+                                        Foreground="#BAFFFFFF"
+                                        HorizontalAlignment="Left"
+                                        FontFamily="{StaticResource GoogleSansRegular}" />
+                            </StackPanel>
+                            <!--BAŞLANGIÇTAÇALIŞTIR-->
+                            <StackPanel Grid.Row="11">
+                                <TextBlock
+                                        x:Name="LaunchStartupHeader" Padding="0,10,0,0"
+                                        FontFamily="{StaticResource GoogleSansBold}"
+                                        FontSize="12"
+                                        Opacity="0.6"
+                                        CharacterSpacing="100"
+                                        HorizontalAlignment="Left" />
+                                <ToggleSwitch
+                                        x:Name="LaunchStartupToggle"
+                                        OnContent="Açık"
+                                        HorizontalAlignment="Left"
+                                        OffContent="Kapalı"
+                                        Toggled="StartupToggled"
+                                        Foreground="#BAFFFFFF"
+                                        FontFamily="{StaticResource GoogleSansRegular}" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="12">
+                                <TextBlock x:Name="HideOnCaptureHeader" Padding="0,10,0,0"
+                                           FontFamily="{StaticResource GoogleSansBold}"
+                                           FontSize="12"
+                                           Opacity="0.6"
+                                           CharacterSpacing="100"
+                                           HorizontalAlignment="Left"/>
+                                <ToggleSwitch x:Name="HideOnCaptureToggle" 
+                                      Toggled="OnHideOnCaptureToggled" 
+                                      OnContent="Açık"
+                                      OffContent="Kapalı"
+                                      Foreground="#BAFFFFFF"
+                                      HorizontalAlignment="Left"
+                                      FontFamily="{StaticResource GoogleSansRegular}" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="13" Spacing="5">
+                                <TextBlock Padding="0,10,0,0"
+                                    x:Name="ScreenshotSavePathHeader"
+                                    FontFamily="{StaticResource GoogleSansBold}"
+                                    FontSize="12"
+                                    Opacity="0.6"
+                                    CharacterSpacing="150"
+                                    HorizontalAlignment="Center"/>
+                                <Button
+                                    x:Name="ScreenshotSavePathButton"
+                                    HorizontalAlignment="Stretch"
+                                    Background="{ThemeResource SystemAccentColorDark1}"
+                                    BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                    Height="32"
+                                    CornerRadius="12"
+                                    BorderThickness="1"
+                                    HorizontalContentAlignment="Center"
+                                    Click="OnPickSavePathClick">
+                                    <TextBlock
+                                        x:Name="SavePathLabel"
+                                        FontSize="14"
+                                        Foreground="#BAFFFFFF"
+                                        Opacity="0.8"
+                                        TextTrimming="CharacterEllipsis"/>
+                                </Button>
+                            </StackPanel>
+                            
+                            <Rectangle Grid.Row="14" Height="1" Fill="{ThemeResource SystemAccentColorLight2}" Opacity="0.5" Margin="20,20,20,10" HorizontalAlignment="Stretch"/>
+
+                            <StackPanel Grid.Row="15">
+                                <HyperlinkButton x:Name="Privacy" FontFamily="{StaticResource GoogleSansRegular}"  FontSize="12" Opacity="0.6"
+                                                 NavigateUri="https://kursatkd.github.io/ukulaSite/privacy.html" HorizontalAlignment="Center"/>
+                                <HyperlinkButton x:Name="Terms" FontFamily="{StaticResource GoogleSansRegular}" FontSize="12" Opacity="0.6"
+                                                 NavigateUri="https://kursatkd.github.io/ukulaSite/terms.html" HorizontalAlignment="Center"/>
+                                <HyperlinkButton x:Name="UpdateCheck" FontFamily="{StaticResource GoogleSansBold}" 
+                                                 FontSize="14" Click="CheckUpdates_Click" HorizontalAlignment="Center"/>
+                                <TextBlock x:Name="VersionTextBlock" FontFamily="{StaticResource GoogleSansBold}"  
+                                           FontSize="10" HorizontalAlignment="Center" Opacity="0.3" Foreground="#BAFFFFFF" CharacterSpacing="120"/>
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </SplitView.Pane>
+            <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+            <!--ANAPENCERE-->
+            <Grid Background="Transparent">
+                <Grid
+                        x:Name="DragArea"
+                        Height="32"
+                        VerticalAlignment="Top"
+                        Background="Transparent" />
+                <Grid
+                        x:Name="MainPanel"
+                        Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!--ORTAAPPADI-->
+                    <TextBlock
+                            Grid.Row="0"
+                            Grid.RowSpan="4"
+                            Text="Ukula"
+                            IsHitTestVisible="False"
+                            FontFamily="{StaticResource LoftyGoals}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="80"
+                            CharacterSpacing="300"
+                            Opacity="0.05"
+                            Foreground="#BAFFFFFF" />
+                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+                    <!--SONUÇ ALANI-->
+                    <ScrollViewer
+                            Grid.Row="0"
+                            Padding="20,10,20,50"
+                            x:Name="MainScrollViewer"
+                            VerticalScrollBarVisibility="Auto"
+                            HorizontalScrollBarVisibility="Disabled"
+                            VerticalScrollMode="Auto">
+                        <Grid>
+                            <muxc:ProgressRing
+                                    x:Name="LoadingRing"
+                                    IsActive="False"
+                                    Visibility="Collapsed"
+                                    Width="30"
+                                    Height="30"
+                                    HorizontalAlignment="Center"
+                                    Margin="0,0,0,14" />
+                            <Border
+                                    x:Name="ResultBox"
+                                    Visibility="Collapsed"
+                                    Background="#55000000"
+                                    CornerRadius="20"
+                                    BorderThickness="1"
+                                    BorderBrush="{ThemeResource SystemAccentColorLight2}">
+                                <StackPanel Spacing="2" Padding="15">
+                                    <TextBlock
+                                            x:Name="LanguageLabel"
+                                            FontSize="12"
+                                            Foreground="SkyBlue"
+                                            FontFamily="{StaticResource GoogleSansBold}" />
+                                    <TextBlock
+                                            x:Name="OriginalTextDisplay"
+                                            FontSize="11"
+                                            Opacity="0.6"
+                                            FontFamily="{StaticResource GoogleSansRegular}"
+                                            TextWrapping="Wrap"
+                                            IsTextSelectionEnabled="True"
+                                            FontStyle="Italic"
+                                            Foreground="#CCFFFFFF" />
+                                    <Rectangle
+                                            Height="1"
+                                            Fill="#33FFFFFF"
+                                            Margin="25,4" />
+                                    <TextBlock
+                                            x:Name="TranslatedTextDisplay"
+                                            FontSize="14"
+                                            TextWrapping="Wrap"
+                                            FontFamily="{StaticResource GoogleSansRegular}"
+                                            IsTextSelectionEnabled="True"
+                                            Foreground="White" />
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </ScrollViewer>
+                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+                    <!--ANABUTONLAR-->
+                    <StackPanel
+                            Grid.Row="1"
+                            Padding="-20"
+                            Spacing="30"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Bottom"
+                            HorizontalAlignment="Center">
+                        <Button
+                                x:Name="TranslateButton"
+                                FontFamily="{StaticResource GoogleSansBold}"
+                                Background="{ThemeResource SystemAccentColorDark1}"
+                                Click="OnSelectAreaClick"
+                                Height="36"
+                                Width="60"
+                                CornerRadius="16"
+                                BorderThickness="1"
+                                Foreground="#BAFFFFFF"
+                                BorderBrush="{ThemeResource SystemAccentColorLight2}">
+                            <FontIcon
+                                    Glyph="&#xf1d4;"
+                                    Opacity="0.9"
+                                    FontSize="28"
+                                    Margin="-10,-10,-10,-10"
+                                    Foreground="#BAFFFFFF" />
+                        </Button>
+                        <Button
+                                x:Name="ScreenshotButton"
+                                FontFamily="{StaticResource GoogleSansBold}"
+                                Click="OnScreenshotClick"
+                                Width="60"
+                                Height="36"
+                                CornerRadius="16"
+                                Background="{ThemeResource SystemAccentColorDark1}"
+                                Foreground="White"
+                                BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                BorderThickness="1">
+
+                            <FontIcon
+                                    Glyph="&#xe9a6;"
+                                    Opacity="0.9"
+                                    FontSize="28"
+                                    Margin="-10,-10,-10,-10"
+                                    Foreground="#BAFFFFFF" />
+                        </Button>
+                    </StackPanel>
+                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+                    <!--YANBUTONLAR-->
+                    <Grid
+                            Grid.Row="2"
+                            Padding="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                                Grid.Column="0"
+                                x:Name="ToggleMenuButton"
+                                Click="ToggleMenu"
+                                Background="{ThemeResource SystemAccentColorDark1}"
+                                BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                BorderThickness="1"
+                                Width="32"
+                                Height="32"
+                                CornerRadius="12">
+                            <FontIcon
+                                    Glyph="&#xE713;"
+                                    Opacity="0.9"
+                                    Margin="-10,-10,-10,-10"
+                                    Foreground="#BAFFFFFF" />
+                        </Button>
+                        <Button
+                                Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Bottom"
+                                x:Name="ClearButton"
+                                Click="ResetTranslation"
+                                Background="{ThemeResource SystemAccentColorDark1}"
+                                BorderBrush="{ThemeResource SystemAccentColorLight2}"
+                                BorderThickness="1"
+                                Width="32"
+                                Height="32"
+                                CornerRadius="12">
+                            <FontIcon
+                                    Glyph="&#xed62;"
+                                    Opacity="0.9"
+                                    Margin="-10,-10,-10,-10"
+                                    Foreground="#BAFFFFFF" />
+                        </Button>
+                    </Grid>
+                    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+                </Grid>
+            </Grid>
+        </SplitView>
+    </Grid>
+</Window>

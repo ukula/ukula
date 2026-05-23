@@ -1,0 +1,16 @@
+<Application
+    x:Class="UkulaApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UkulaApp">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="LoftyGoals">ms-appx:///Assets/Fonts/Loftygoals-Regular.ttf#Lofty Goals</FontFamily>
+            <FontFamily x:Key="GoogleSansRegular">ms-appx:///Assets/Fonts/GoogleSans-Regular.ttf#Google Sans</FontFamily>
+            <FontFamily x:Key="GoogleSansBold">ms-appx:///Assets/Fonts/GoogleSans-Bold.ttf#Google Sans</FontFamily>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
